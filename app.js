@@ -81,6 +81,27 @@ console.log(`Ans 06 : ${_12_31_2020}`);
 // console.log(_12_31_2020.getDay());
 // console.log(weekArr[_12_31_2020.getDay()]);
 
-/************** Q No 07( Code a statement that creates a Date object for the last day of the 
-last month of 2020 and assigns it to later, which hasn't been 
-declared beforehand.)**************/
+/************** Q No 07( Create a Date object for the second day of the second month of 
+ 1992 and assign it to a variable that hasn't been declared 
+ beforehand. )**************/
+var date1992 = new Date("02,02,1992");
+var _02_02_1992 = date1992;
+console.log(`Ans 07 : ${_02_02_1992}`);
+
+/************** Q No 08( Code a single statement that displays in an alert the milliseconds 
+that elapsed between the reference date and the beginning of 
+1980. )**************/
+console.log(new Date().getTime());
+console.log(new Date().getTime("00,01,1980"));
+console.log(new Date().getTime("1980,01,01"));
+
+/************** Q No 09(How do you change the year of a date in JavaScript?  )**************/
+var d1 = new Date();
+console.log(`Ans 09 :Before Change Year ${d1}`);
+d1.setFullYear("2000");
+console.log(`Ans 09 : After Change Year${d1}`);
+
+/************** Q No 10(Write a JavaScript function to change the month of a given 
+date to January.  )**************/
+d1.setMonth("09");
+console.log(`Ans 10 : ${d1}`);
