@@ -99,9 +99,64 @@ console.log(new Date().getTime("1980,01,01"));
 var d1 = new Date();
 console.log(`Ans 09 :Before Change Year ${d1}`);
 d1.setFullYear("2000");
-console.log(`Ans 09 : After Change Year${d1}`);
+console.log(`Ans 09 : After Change Year ${d1}`);
 
 /************** Q No 10(Write a JavaScript function to change the month of a given 
 date to January.  )**************/
 d1.setMonth("09");
-console.log(`Ans 10 : ${d1}`);
+console.log(`Ans 10 : After Change Month ${d1}`);
+
+/************** Functions **************/
+console.log("*****************Functions*******************");
+/************** Q No 01(Code the first line of a function displayAlert)**************/
+function displayAlert() {}
+/************** Q No 02(Code a function named askName that prompts the user to "Enter 
+name" and assigns the answer to userName, which hasn't been 
+declared beforehand. )**************/
+function askName() {
+  var userName = prompt("Enter Name", "Bilal");
+  console.log(`Ans 02 : ${userName}`);
+}
+askName();
+/************** Q No 03(Code a function that calls 2 other functions.)**************/
+function handleOne() {
+  handleTwo();
+  handleThree();
+}
+handleOne();
+function handleTwo() {
+  console.log(`Ans 03 : Three`);
+}
+function handleThree() {
+  console.log(`Ans 03 : Four`);
+}
+// handleFour();
+// function handleFour() {
+//   console.log("Four");
+// }
+
+// var n = 5;
+// console.log(n);
+// function nInc() {
+//   n = 6;
+//   console.log(n);
+// }
+// console.log(n);
+// nInc();
+
+/************** Q No 04(Code a function that displays a prompt, "Enter name" and then 
+displays the name in an alert. Call the function.)**************/
+function disName() {
+  var name = prompt("Enter Name");
+  alert(name);
+  console.log(`Ans 04 : ${name}`);
+}
+disName();
+/************** Q No 05(Code the first line of a function named concat that has 3 
+parameters, the first three letters of the alphabet. Call that takes 
+a variable, a string, and a number as arguments.)**************/
+var bool = true;
+function handleConcate(a, b, c) {
+  console.log(`Ans 05 : ${a},${b},${c}`);
+}
+handleConcate(bool, "Bilal", 28);
